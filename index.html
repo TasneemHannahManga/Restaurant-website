@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant Website</title>
+
+	<style>
+		body {
+			margin: 0;
+		}
+
+		#header {
+			background-color: #dbc6c0d5;
+			display: flex;
+			justify-content: space-between;
+			gap: 20px;
+			padding: 15px;
+			position: fixed;
+			top: 0;
+			transition: top 0.5s ease-in-out;
+			z-index: 2;
+			width: 100dvw;
+			height: 44px;
+		}
+
+		.navbar {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 60px;
+			padding-right: 100px;
+		}
+
+		.navbar > a {
+			color: #1c3150;
+			font-size: 1.2rem;
+			font-family: cursive;
+			text-decoration: none;
+		}
+
+		#home{
+			background-image: url('./images/drew-coffman-jUOaONoXJQk-unsplash.jpg');
+			background-repeat: no-repeat;
+			height: 100dvh;
+			width: auto;
+			background-size: 100%;
+			margin-top: 74px;
+		}
+
+		.title {
+			font-family: 'Times New Roman', Times, serif;
+			font-style: oblique;
+			color: #1c3150;
+			font-size: 2.5rem;
+			text-align: center;
+		}
+
+		.menu-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 80px;
+			justify-content: space-around;
+		}
+
+		.menu-card {
+			width: 200px;
+			padding: 0 50px;
+			border: solid #4d6489 1px;
+			border-radius: 20px;
+			background-color: #aaa2b1;
+		}
+
+		.menu-title {
+			font-family: 'Times New Roman', Times, serif;
+			color: #1c3150;
+			text-align: center;
+			font-size: 1.6rem;
+		}
+
+		hr {
+			border: dotted #4d6489 1px;
+			width: 80%;
+		}
+
+		.menu-item {
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.2rem;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+
+		.red {
+			color: darkred;
+		}
+
+		.blue {
+			color: #4d6489;
+		}
+
+		.para {
+			text-align: center;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			font-size: 1.2rem;
+		}
+
+		#gallery {
+			background-color: #78809d;
+			padding: 30px 0;
+		}
+
+		.gallery-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.food-pic {
+			height: 200px;
+			width: auto;
+			margin: 20px;
+			border-radius: 30px;
+		}
+
+		#contact {
+			background-color: #dbc6c0;
+			padding: 50px 0;
+		}
+
+		.footer {
+			text-align: center;
+			font-size: 1.2rem;
+			font-family: cursive;
+			color: grey;
+		}
+
+		@media (max-width: 700px) {
+
+			.navbar{
+				padding-right: 0;
+				gap: 10px;
+				margin-right: 20px;
+			}
+			.title {
+				font-size: 1.5rem;
+			}
+			.food-pic {
+				height: 150px;
+			}
+			.footer {
+				font-size: 1rem;
+			}
+			.para {
+				font-size: 0.8rem;
+			}
+			.menu-title {
+				font-size: 1.2rem;
+			}
+			.menu-item {
+				font-size: 1rem;
+			}
+			.menu-container {
+				gap: 20px;
+			}
+			.navbar > a {
+				font-size: 0.8rem;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<div id="header">
+		<div>
+			<img src="./images/logoipsum-284.svg" alt="logo ipsum logo">
+		</div>
+
+	    <div class="navbar">
+			<a href="#home">Home</a>
+			<a href="#menu">Menu</a>
+			<a href="#locations">Locations</a>
+			<a href="#gallery">Gallery</a>
+			<a href="#contact">Contact</a>
+	    </div>
+
+	</div>
+
+	<div id="home">
+	</div>
+
+	<div id="menu">
+		<h2 class="title">Menu</h2>
+		<div class="menu-container">
+			<div class="menu-card">
+				<h3 class="menu-title">Breakfast</h3>
+				<div class="menu-body">
+					<div class="menu-item">
+						<p class="text">French Toast</p>
+						<p class="red">2.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Cappuccino</p>
+						<p class="red">3.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Eggs Benedict</p>
+						<p class="red">4.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Croissant</p>
+						<p class="red">3.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Yoghurt Parfait</p>
+						<p class="red">5.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Pancake</p>
+						<p class="red">4.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Bagel And Cream Cheese</p>
+						<p class="red">3.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Omelette</p>
+						<p class="red">2.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu-card">
+				<h3 class="menu-title">Desert</h3>
+				<div class="menu-body">
+					<div class="menu-item">
+						<p class="text">Crème Brûlée</p>
+						<p class="red">6.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Pain Au Chocolat</p>
+						<p class="red">5.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Macaron</p>
+						<p class="red">8.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Lemon Tart</p>
+						<p class="red">7.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Crème Caramel</p>
+						<p class="red">5.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Apple Tart</p>
+						<p class="red">9.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Eclair</p>
+						<p class="red">3.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Paris Brest</p>
+						<p class="red">4.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu-card">
+				<h3 class="menu-title">Dinner</h3>
+				<div class="menu-body">
+					<div class="menu-item">
+						<p class="text">Onion Soup</p>
+						<p class="red">12.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Escargot</p>
+						<p class="red">18.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Salmon en papillote</p>
+						<p class="red">22.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Bouillabaisse</p>
+						<p class="red">16.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Tomato Soup</p>
+						<p class="red">12.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Chicken Confit</p>
+						<p class="red">11.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Quiche Lorraine</p>
+						<p class="red">15.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Moules Frites</p>
+						<p class="red">14.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu-card">
+				<h3 class="menu-title">Appetisers and Sides</h3>
+				<div class="menu-body">
+					<div class="menu-item">
+						<p class="text">Baguette</p>
+						<p class="red">2.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Pommes Anna</p>
+						<p class="red">4.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Paillassons de Courgettes</p>
+						<p class="red">6.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Pommes Fondantes</p>
+						<p class="red">7.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Truffade</p>
+						<p class="red">5.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Fougasse</p>
+						<p class="red">3.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Piperade</p>
+						<p class="red">4.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Panisses</p>
+						<p class="red">5.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu-card">
+				<h3 class="menu-title">Lunch</h3>
+				<div class="menu-body">
+					<div class="menu-item">
+						<p class="text">Croque monsieur and madame</p>
+						<p class="red">5.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Jambon-beurre</p>
+						<p class="red">9.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Pan bagnat</p>
+						<p class="red">6.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Saucisson sec</p>
+						<p class="red">8.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Sandwich de merguez</p>
+						<p class="red">6.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Le Welsh</p>
+						<p class="red">7.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Chèvre and tomato</p>
+						<p class="red">4.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Pâté and cornichons</p>
+						<p class="red">6.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="menu-card">
+				<h3 class="menu-title">Drinks</h3>
+				<div class="menu-body">
+					<div class="menu-item">
+						<p class="text"> Kirsch</p>
+						<p class="red">18.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text"> Absinthe</p>
+						<p class="red">17.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Ti Punch</p>
+						<p class="red">14.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Coffee</p>
+						<p class="red">2.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Tea</p>
+						<p class="red">2.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Water</p>
+						<p class="red">0.50</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Soda</p>
+						<p class="red">1.99</p>
+					</div>
+					<hr />
+					<div class="menu-item">
+						<p class="text">Milkshake</p>
+						<p class="red">4.99</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="locations">
+		<h2 class="title">Locations</h2>
+		<div class="para">
+			<p class="red">📍 3235 Impasse Helene, 47653 Saint-Malo</p>
+			<p class="text">🕒 08:00 - 20:00</p>
+			<p class="blue">📞 1234567890</p>
+			<hr />
+			<p class="red">📍 6 Descente Rolland, 59409 Fréjus</p>
+			<p class="text">🕒 09:00 - 17:00</p>
+			<p class="blue">📞 1234567890</p>
+			<hr />
+			<p class="red">📍 6053 Chemin De la Terrasse, 57235 Grasse</p>
+			<p class="text">🕒 07:00 - 22:00</p>
+			<p class="blue">📞 1234567890</p>
+		</div>
+	</div>
+
+	<div id="gallery">
+		<h3 class="title">Gallery</h3>
+		<div class="gallery-container">
+			<img class="food-pic" src="./images/pexels-chanwalrus-958545.jpg" alt="">
+			<img class="food-pic" src="./images/pexels-dapur-melodi-192125-1109197.jpg" alt="" >
+			<img class="food-pic" src="./images/pexels-ffawdyy-13573781.jpg" alt="">
+			<img class="food-pic" src="./images/pexels-jonathanborba-14242068.jpg" alt="">
+			<img class="food-pic" src="./images/pexels-raymond-petrik-1448389535-27405284.jpg" alt="">
+			<img class="food-pic" src="./images/pexels-willpicturethis-2641886.jpg" alt="">
+			<img class="food-pic" src="./images/vlado-chabal-nsaEvkk7d1g-unsplash.jpg" alt="">
+			<img class="food-pic" src="./images/vlado-chabal-OYdesGV0Zas-unsplash.jpg" alt="">
+		</div>
+	</div>
+
+	<div id="contact">
+		<h3 class="title">Contact</h3>
+		<p class="para">📞 1234567890</p>
+		<p class="para">📧 lorem@impsum.com</p>
+	</div>
+
+	<p class="footer">@2024 Logo Impsum</p>
+
+	<script>
+		let prevScrollops = window.pageYOffset;
+
+		window.onscroll = () => {
+			let currentScrollpos = window.pageYOffset;
+
+			if(prevScrollops > currentScrollpos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-74px";
+			}
+			prevScrollops = currentScrollpos;
+		}
+	</script>
+	
+</body>
+</html>
